@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <title> mijn website</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap-CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+            <style>
+              body{background-image: url(afbeeldingen/achtergrond.jpg);
+            
+            background-size: cover;
+            color: white;}
+           .p1{font-size:4.375em;}
+            li :hover{color:rgb(255 ,255 ,255 ,1);font-size: 1.100em;background-image:url(afbeeldingen/Knipsel.PNG);font-weight: bolder;}
+            .text{text-align:center;font-size: 50px;font-family: 'Fjalla One', sans-serif;}
+            .bt-conact{
+            font-size: 30px;}
+            .navbar .item{font-weight: bold;}
+            .navbar-dark { font-size: 22px;font-weight: 500;
+            --bs-navbar-color: rgb(255 ,255 ,255 ,1);}
+            
+            
+                nav{background: rgba(0, 0, 255, 0.507);
+                  
+                
+            }
+           
+            .text{text-align: center;}
+            
+           
+            input[type="text"],input[type="date"], input[type="tel"],input[type="email"], textarea, select, button{padding: 8px;
+                    border-radius: 4px; box-shadow: inset 2px 2px 5px rgb(23, 108, 154);
+                    width: 200px;box-sizing: border-box;}
+                    textarea{height: 100px;padding: 5px 4px;}
+                    button:active{background-color: rgb(15, 121, 187);color: white;border-radius: 4px; box-shadow: inset 2px 2px 5px blue;}
+            .contactformulier{ font-size: 50px;
+                             align-items: center;}
+            form{margin-left: 20px;}
+            .col-2,.col-10 ,.col-1 ,.col-8{margin-top:2px;padding-top: 12px;padding-bottom: 5px;}
+            label { margin-left: 10px;
+                  padding: 12px 12px 12px 0;
+                   }
+            .btn-primary{background-color:rgba(0, 0, 255, 0.507) ;}
+            .gender{margin-left:10px;
+                       display: flex;
+                       flex-wrap: wrap;}
+            .btn{margin-top: 20px;}
+            .container-fluid img{width: 3.75em;}
+</style>
+    </head>
+    <body class="container-md">
+      <div>
+        <header>
+                <nav class="navbar navbar-expand-sm navbar-dark">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="index.html"><img src="afbeeldingen/logo.jpg" alt="webdesign"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="overmij.html">Over</a>
+                          </li> 
+                        </ul>
+                      </div>
+                    </div>
+                </nav>
+        </header>
+        
+        <form  class="row " >
+            <h3 class="col-12">Contact formulier</h3>
+            <div class=" col-12 col-md-2"><label for="naam">Uw Naam </label></div>
+             <div class="col-10"><input id="naam" type="text" placeholder="Uw naam"></div>
+             <div class="col-12 col-md-2"><label id="geslacht" style="padding-top: 1px;">geslacht</label></div>
+             <div class="col=12 col-md-1"><input type="radio" name="geslacht" value="Man" checked >man </div>
+             <div class="col=12 col-md-1"><input type="radio" name="geslacht" value="vrouw">Vrouw</div>
+             <div class="col=12 col-md-8"><input type="radio" name="geslacht" value="Anders">Anders</div>
+            <div class="col-12 col-md-2"><label for="telefoon"> Telefoonnummer</label></div>
+            <div class=" col-12 col-md-10"><input id="telefoon" type="tel" name="telefoon" placeholder="Uw telefoon nummer"></div>
+            <div class=" col-12 col-md-2"><label for="adres">Adres:</label></div>
+            <div class=" col-12 col-md-10"><input type="text" id="adres" name="adres"></div>
+            <div class=" col-12 col-md-2"><label for="postcode">Postcode:</label></div>
+            <div class="col-12 col-md-10"><input type="text" id="postcode" name="postcode"></div>
+            <div class="col-12 col-md-2"><label for="woonplaats">Woonplaats:</label></div>
+            <div class=" col-12 col-md-10"><input type="text" id="woonplaats" name="woonplaats"></div>
+            <div class="col-12 col-md-2"><label for="geboortedatum">geboortedatum</label></div>
+            <div class=" col-12 col-md-10"><input type="date" id="geboortedatum" name="geboortedatum"></div>
+            <div class="col-12  col-md-4 offset-md-2"><button type="button" class="btn btn-primary " > verzend</button></div>
+        
+        </form>
+    </div>
+            
+    <div class="col-md-4" style="margin-top: 40px;margin-left: 10px;min-height: 200px;"><footer >
+      <p> Copyright &copy; 2023 Kh. Altaan </p>
+      </footer>
+    </div>
+      
+      <!-- Bootstrap-JavaScript-->
+          <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+          crossorigin="anonymous">
+          </script>
+    </body>
+</html>
